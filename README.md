@@ -2,7 +2,8 @@
 
 A sophisticated and modern car e-commerce platform built with React, Redux Toolkit, and Tailwind CSS. CarSokoni provides users with an intuitive interface to browse, search, filter, and purchase premium vehicles online with a focus on the Kenyan automotive market.
 
-![CarSokoni Banner](https://via.placeholder.com/1200x400/000000/FFFFFF?text=CarSokoni+-+Find+Your+Perfect+Drive)
+<img width="1902" height="936" alt="image" src="https://github.com/user-attachments/assets/c3903451-20e1-46c3-8ff6-ea001cdf1196" />
+
 
 ## ✨ Project Overview
 
