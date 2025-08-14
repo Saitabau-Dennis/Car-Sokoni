@@ -98,8 +98,8 @@ const ContactPage = () => {
                 <div>
                   <h3 className="text-lg font-medium text-black">Email</h3>
                   <p className="text-gray-600">
-                    hello@autohubkenya.co.ke<br />
-                    service@autohubkenya.co.ke
+                    hello@carsokoni.co.ke<br />
+                    service@carsokoni.co.ke
                   </p>
                 </div>
               </div>

@@ -7,7 +7,7 @@ const AboutPage = () => {
       <div className="bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-medium mb-6">About AutoHub Kenya</h1>
+            <h1 className="text-4xl md:text-5xl font-medium mb-6">About CarSokoni</h1>
             <p className="text-xl max-w-3xl mx-auto text-gray-300">
               Your premier destination for automotive excellence. We provide an extensive collection of certified vehicles 
               with honest pricing and unmatched customer experience across East Africa.
@@ -22,7 +22,7 @@ const AboutPage = () => {
           <div>
             <h2 className="text-3xl font-medium text-black mb-6">Our Journey</h2>
             <p className="text-gray-600 mb-4">
-              Established in 2019, AutoHub Kenya has evolved into East Africa's premier digital automotive marketplace. 
+              Established in 2019, CarSokoni has evolved into East Africa's premier digital automotive marketplace. 
               We began with a clear vision: to revolutionize vehicle acquisition through transparency, convenience, and universal accessibility.
             </p>
             <p className="text-gray-600 mb-4">
@@ -37,7 +37,7 @@ const AboutPage = () => {
           <div>
             <img
               src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop"
-              alt="About AutoHub Kenya"
+              alt="About CarSokoni"
               className="rounded-lg shadow-lg border border-gray-200"
             />
           </div>
