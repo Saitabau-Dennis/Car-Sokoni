@@ -36,20 +36,20 @@ const HomePage = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 flex items-center min-h-screen">
           <div className="text-center w-full">
             <h1 className="text-5xl md:text-7xl font-light mb-8 leading-tight text-white">
-              Discover Your
+              Find Your
               <span className="block font-medium">
-                Perfect Drive
+                Dream Vehicle
               </span>
             </h1>
             <p className="text-xl md:text-2xl mb-12 text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              Premium vehicles, transparent pricing, and exceptional service in Kenya. 
-              Your journey to the perfect car starts here.
+              Quality automobiles, competitive pricing, and outstanding customer care in East Africa. 
+              Your path to automotive excellence begins today.
             </p>
             
             {/* Enhanced Search Bar */}
             <div className="mb-12 max-w-2xl mx-auto relative z-50">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 shadow-lg overflow-visible">
-                <SearchBar placeholder="Search luxury cars, SUVs, sedans..." isHero={true} />
+                <SearchBar placeholder="Search premium vehicles, crossovers, sedans..." isHero={true} />
               </div>
             </div>
             
@@ -59,13 +59,13 @@ const HomePage = () => {
                 to="/cars" 
                 className="bg-black hover:bg-gray-800 text-white font-medium px-10 py-4 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
-                Explore Collection
+                Browse Inventory
               </Link>
               <Link 
                 to="/about" 
                 className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 font-medium px-10 py-4 rounded-xl text-lg transition-all duration-300 shadow-lg"
               >
-                Learn More
+                Discover More
               </Link>
             </div>
           </div>
@@ -84,13 +84,13 @@ const HomePage = () => {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <span className="text-black font-medium text-lg mb-4 block">FEATURED COLLECTION</span>
+            <span className="text-black font-medium text-lg mb-4 block">PREMIUM SHOWCASE</span>
             <h2 className="text-4xl md:text-5xl font-light text-black mb-6">
-              Handpicked for Excellence
+              Meticulously Selected Vehicles
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Discover our carefully curated selection of premium vehicles, each one representing 
-              the perfect blend of performance, luxury, and reliability.
+              Explore our expertly chosen range of exceptional automobiles, each vehicle representing 
+              the ideal combination of innovation, comfort, and dependability.
             </p>
           </div>
           
@@ -107,7 +107,7 @@ const HomePage = () => {
               to="/cars" 
               className="inline-flex items-center bg-black hover:bg-gray-800 text-white font-medium px-8 py-4 rounded-xl text-lg transition-all duration-300"
             >
-              View Full Collection
+              View Complete Inventory
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -120,13 +120,13 @@ const HomePage = () => {
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <span className="text-black font-medium text-lg mb-4 block">BROWSE BY TYPE</span>
+            <span className="text-black font-medium text-lg mb-4 block">VEHICLE CATEGORIES</span>
             <h2 className="text-4xl md:text-5xl font-light text-black mb-6">
-              Find Your Style
+              Discover Your Match
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Whether you're looking for luxury, performance, or practicality, 
-              we have the perfect vehicle category for your lifestyle.
+              From executive comfort to athletic performance and everyday utility, 
+              we offer the ideal vehicle category to complement your unique lifestyle.
             </p>
           </div>
           
@@ -135,19 +135,19 @@ const HomePage = () => {
               const categoryData = {
                 'SUV': {
                   image: '/Images/Subaru Outback 1.jpg',
-                  description: 'Spacious and versatile for any adventure'
+                  description: 'Commanding presence with family-friendly versatility'
                 },
                 'Hatchback': {
                   image: '/Images/Honda Fit 1.jpg',
-                  description: 'Compact efficiency meets modern design'
+                  description: 'Urban agility with intelligent space utilization'
                 },
                 'Performance': {
                   image: '/Images/Suzuki Swift Sport 1.jpeg',
-                  description: 'Thrilling performance and dynamic handling'
+                  description: 'Exhilarating speed meets precision engineering'
                 },
                 'Pickup': {
                   image: '/Images/Volkswagen Amarok 1.jpeg',
-                  description: 'Ultimate versatility and capability'
+                  description: 'Professional capability with rugged dependability'
                 }
               };
               
@@ -193,11 +193,11 @@ const HomePage = () => {
       {/* Newsletter Section */}
       <section className="py-24 bg-white border-t border-gray-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-light text-black mb-6">
-            Stay in the Loop
+                      <h2 className="text-4xl md:text-5xl font-light text-black mb-6">
+            Stay Connected
             </h2>
           <p className="text-xl mb-12 text-gray-600">
-            Get exclusive access to new arrivals, special offers, and insider automotive news.
+            Receive priority access to latest arrivals, exclusive deals, and premium automotive insights.
             </p>
             
           <div className="max-w-md mx-auto">
@@ -215,7 +215,7 @@ const HomePage = () => {
               </button>
             </form>
             <p className="text-sm text-gray-500 mt-4">
-              No spam, just the good stuff. Unsubscribe anytime.
+              Premium content only. Cancel subscription at any time.
             </p>
           </div>
         </div>

@@ -42,9 +42,9 @@ const ContactPage = () => {
       <div className="bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-medium mb-6">Contact Us</h1>
+            <h1 className="text-4xl md:text-5xl font-medium mb-6">Get In Touch</h1>
             <p className="text-xl max-w-3xl mx-auto text-gray-300">
-              Have a question or need assistance? We're here to help! Get in touch with our team.
+              Questions about our vehicles or services? We're standing by to assist! Connect with our expert team today.
             </p>
           </div>
         </div>
@@ -54,7 +54,7 @@ const ContactPage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
-            <h2 className="text-3xl font-medium text-black mb-8">Get in Touch</h2>
+            <h2 className="text-3xl font-medium text-black mb-8">Connect With Us</h2>
             
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
@@ -65,11 +65,11 @@ const ContactPage = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-black">Address</h3>
+                  <h3 className="text-lg font-medium text-black">Location</h3>
                   <p className="text-gray-600">
-                    123 Kimathi Street<br />
-                    Nairobi CBD, Kenya<br />
-                    P.O. Box 12345-00100
+                    456 Moi Avenue<br />
+                    Nairobi Business District, Kenya<br />
+                    P.O. Box 98765-00200
                   </p>
                 </div>
               </div>
@@ -83,8 +83,8 @@ const ContactPage = () => {
                 <div>
                   <h3 className="text-lg font-medium text-black">Phone</h3>
                   <p className="text-gray-600">
-                    +254 700 123 456<br />
-                    +254 722 987 654
+                    +254 712 345 678<br />
+                    +254 733 456 789
                   </p>
                 </div>
               </div>
@@ -98,8 +98,8 @@ const ContactPage = () => {
                 <div>
                   <h3 className="text-lg font-medium text-black">Email</h3>
                   <p className="text-gray-600">
-                    info@carsokoni.co.ke<br />
-                    support@carsokoni.co.ke
+                    hello@autohubkenya.co.ke<br />
+                    service@autohubkenya.co.ke
                   </p>
                 </div>
               </div>
@@ -111,11 +111,11 @@ const ContactPage = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-black">Business Hours</h3>
+                  <h3 className="text-lg font-medium text-black">Operating Hours</h3>
                   <p className="text-gray-600">
-                    Monday - Friday: 8:00 AM - 6:00 PM<br />
-                    Saturday: 9:00 AM - 4:00 PM<br />
-                    Sunday: Closed
+                    Monday - Friday: 7:30 AM - 7:00 PM<br />
+                    Saturday: 8:00 AM - 5:00 PM<br />
+                    Sunday: 10:00 AM - 3:00 PM
                   </p>
                 </div>
               </div>
@@ -125,7 +125,7 @@ const ContactPage = () => {
           {/* Contact Form */}
           <div>
             <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
-              <h2 className="text-2xl font-medium text-black mb-6">Send us a Message</h2>
+              <h2 className="text-2xl font-medium text-black mb-6">Share Your Inquiry</h2>
               
               {isSubmitted ? (
                 <div className="text-center py-8">
@@ -134,8 +134,8 @@ const ContactPage = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-medium text-black mb-2">Message Sent!</h3>
-                  <p className="text-gray-600">Thank you for contacting us. We'll get back to you soon.</p>
+                  <h3 className="text-xl font-medium text-black mb-2">Inquiry Received!</h3>
+                  <p className="text-gray-600">Thank you for reaching out. Our team will respond within 24 hours.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -221,7 +221,7 @@ const ContactPage = () => {
                       value={formData.message}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-all duration-200 bg-white text-black"
-                      placeholder="Please describe how we can help you..."
+                                              placeholder="Please share your questions or requirements..."
                     />
                   </div>
 
@@ -236,7 +236,7 @@ const ContactPage = () => {
                         Sending...
                       </div>
                     ) : (
-                      'Send Message'
+                      'Submit Inquiry'
                     )}
                   </button>
                 </form>

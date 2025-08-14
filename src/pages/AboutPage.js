@@ -7,10 +7,10 @@ const AboutPage = () => {
       <div className="bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-medium mb-6">About CarSokoni</h1>
+            <h1 className="text-4xl md:text-5xl font-medium mb-6">About AutoHub Kenya</h1>
             <p className="text-xl max-w-3xl mx-auto text-gray-300">
-              Your trusted partner in finding the perfect car. We offer a wide selection of quality vehicles 
-              with transparent pricing and exceptional customer service in Kenya.
+              Your premier destination for automotive excellence. We provide an extensive collection of certified vehicles 
+              with honest pricing and unmatched customer experience across East Africa.
             </p>
           </div>
         </div>
@@ -20,24 +20,24 @@ const AboutPage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h2 className="text-3xl font-medium text-black mb-6">Our Story</h2>
+            <h2 className="text-3xl font-medium text-black mb-6">Our Journey</h2>
             <p className="text-gray-600 mb-4">
-              Founded in 2020, CarSokoni has grown to become one of Kenya's most trusted online car marketplaces. 
-              We started with a simple mission: to make car buying transparent, convenient, and accessible to everyone.
+              Established in 2019, AutoHub Kenya has evolved into East Africa's premier digital automotive marketplace. 
+              We began with a clear vision: to revolutionize vehicle acquisition through transparency, convenience, and universal accessibility.
             </p>
             <p className="text-gray-600 mb-4">
-              Today, we offer hundreds of quality vehicles from trusted dealers and individual sellers across the country. 
-              Our platform combines cutting-edge technology with personalized service to ensure every customer finds their perfect match.
+              Today, we showcase thousands of exceptional vehicles from verified dealers and private owners throughout the region. 
+              Our innovative platform merges advanced technology with personalized guidance to guarantee every client discovers their ideal automotive companion.
             </p>
             <p className="text-gray-600">
-              We believe that buying a car should be an exciting experience, not a stressful one. That's why we've built 
-              our platform around transparency, trust, and customer satisfaction.
+              We firmly believe that purchasing a vehicle should be an exhilarating journey, not a challenging ordeal. This conviction drives 
+              our commitment to building a platform founded on transparency, reliability, and complete customer satisfaction.
             </p>
           </div>
           <div>
             <img
               src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop"
-              alt="About CarSokoni"
+              alt="About AutoHub Kenya"
               className="rounded-lg shadow-lg border border-gray-200"
             />
           </div>
@@ -45,7 +45,7 @@ const AboutPage = () => {
 
         {/* Values */}
         <div className="mb-16">
-          <h2 className="text-3xl font-medium text-black text-center mb-12">Our Values</h2>
+          <h2 className="text-3xl font-medium text-black text-center mb-12">Core Principles</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
@@ -53,9 +53,9 @@ const AboutPage = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-medium text-black mb-2">Trust</h3>
+              <h3 className="text-xl font-medium text-black mb-2">Integrity</h3>
               <p className="text-gray-600">
-                We build trust through transparency, honest descriptions, and verified vehicle information.
+                We establish confidence through complete transparency, accurate descriptions, and thoroughly verified vehicle data.
               </p>
             </div>
             <div className="text-center">
@@ -64,9 +64,9 @@ const AboutPage = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-medium text-black mb-2">Innovation</h3>
+              <h3 className="text-xl font-medium text-black mb-2">Excellence</h3>
               <p className="text-gray-600">
-                We leverage technology to create the best car buying experience in Kenya.
+                We harness cutting-edge technology to deliver the finest automotive purchasing experience in East Africa.
               </p>
             </div>
             <div className="text-center">
@@ -75,9 +75,9 @@ const AboutPage = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-medium text-black mb-2">Customer Focus</h3>
+              <h3 className="text-xl font-medium text-black mb-2">Client Success</h3>
               <p className="text-gray-600">
-                Our customers are at the heart of everything we do. We're here to help you every step of the way.
+                Our clients drive every decision we make. We're dedicated to supporting you throughout your entire automotive journey.
               </p>
             </div>
           </div>
@@ -85,12 +85,12 @@ const AboutPage = () => {
 
         {/* Team */}
         <div className="text-center">
-          <h2 className="text-3xl font-medium text-black mb-12">Our Team</h2>
+          <h2 className="text-3xl font-medium text-black mb-12">Leadership Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: 'John Kamau', role: 'Founder & CEO', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face' },
-              { name: 'Sarah Wanjiku', role: 'Head of Operations', image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face' },
-              { name: 'Peter Mwangi', role: 'Lead Developer', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face' }
+              { name: 'David Kinyua', role: 'Founder & Managing Director', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face' },
+              { name: 'Grace Mutindi', role: 'Chief Operations Officer', image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face' },
+              { name: 'Michael Ochieng', role: 'Technology Director', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face' }
             ].map((member, index) => (
               <div key={index} className="text-center">
                 <img
