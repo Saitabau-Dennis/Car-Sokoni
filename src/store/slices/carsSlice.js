@@ -1,18 +1,32 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { loadCarsFromStorage, saveCarsToStorage } from '../../utils/localStorage';
+
+// Load initial state from localStorage
+const persistedCars = loadCarsFromStorage();
 
 const initialState = {
-  items: [],
+  items: persistedCars?.items || [],
   loading: false,
   error: null,
-  filters: {
+  filters: persistedCars?.filters || {
     priceRange: [0, 10000000],
     brands: [],
     categories: [],
     searchTerm: '',
     yearRange: [2010, 2024],
   },
-  sortBy: 'newest',
-  filteredItems: [],
+  sortBy: persistedCars?.sortBy || 'newest',
+  filteredItems: persistedCars?.filteredItems || [],
+};
+
+// Helper function to save state to localStorage
+const saveCarsState = (state) => {
+  saveCarsToStorage({
+    items: state.items,
+    filters: state.filters,
+    sortBy: state.sortBy,
+    filteredItems: state.filteredItems
+  });
 };
 
 const carsSlice = createSlice({
@@ -27,6 +41,7 @@ const carsSlice = createSlice({
       state.loading = false;
       state.items = action.payload;
       state.filteredItems = action.payload;
+      saveCarsState(state);
     },
     fetchCarsFailure: (state, action) => {
       state.loading = false;
@@ -34,12 +49,15 @@ const carsSlice = createSlice({
     },
     setFilters: (state, action) => {
       state.filters = { ...state.filters, ...action.payload };
+      saveCarsState(state);
     },
     setSortBy: (state, action) => {
       state.sortBy = action.payload;
+      saveCarsState(state);
     },
     setSearchTerm: (state, action) => {
       state.filters.searchTerm = action.payload;
+      saveCarsState(state);
     },
     applyFilters: (state) => {
       let filtered = [...state.items];
@@ -106,11 +124,13 @@ const carsSlice = createSlice({
       }
       
       state.filteredItems = filtered;
+      saveCarsState(state);
     },
     resetFilters: (state) => {
       state.filters = initialState.filters;
       state.sortBy = 'newest';
       state.filteredItems = state.items;
+      saveCarsState(state);
     },
   },
 });

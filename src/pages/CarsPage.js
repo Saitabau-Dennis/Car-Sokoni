@@ -1,25 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchCarsSuccess, applyFilters } from '../store/slices/carsSlice';
-import { carsData } from '../data/cars';
+import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import CarCard from '../components/car/CarCard';
 import CarFilters from '../components/car/CarFilters';
 import SearchBar from '../components/common/SearchBar';
 import LoadingSpinner from '../components/common/LoadingSpinner';
 
 const CarsPage = () => {
-  const dispatch = useDispatch();
   const { filteredItems: cars, loading, error } = useSelector((state) => state.cars);
   const [viewMode, setViewMode] = useState('grid'); // 'grid' or 'list'
   const [currentPage, setCurrentPage] = useState(1);
   const [sortBy, setSortBy] = useState('featured');
   const carsPerPage = 12;
-
-  useEffect(() => {
-    // Load cars data on component mount
-    dispatch(fetchCarsSuccess(carsData));
-    dispatch(applyFilters());
-  }, [dispatch]);
 
   // Pagination logic
   const indexOfLastCar = currentPage * carsPerPage;

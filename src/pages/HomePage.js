@@ -1,20 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchCarsSuccess, applyFilters } from '../store/slices/carsSlice';
-import { carsData, getCategories } from '../data/cars';
+import { useSelector } from 'react-redux';
+import { getCategories } from '../data/cars';
 import CarCard from '../components/car/CarCard';
 import SearchBar from '../components/common/SearchBar';
 
 const HomePage = () => {
-  const dispatch = useDispatch();
   const { items: cars } = useSelector((state) => state.cars);
-  
-  useEffect(() => {
-    // Load cars data on component mount
-    dispatch(fetchCarsSuccess(carsData));
-    dispatch(applyFilters());
-  }, [dispatch]);
 
   const featuredCars = cars.slice(0, 6);
   const categories = getCategories();

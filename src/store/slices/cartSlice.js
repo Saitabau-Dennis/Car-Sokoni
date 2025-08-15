@@ -1,9 +1,22 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { loadCartFromStorage, saveCartToStorage } from '../../utils/localStorage';
+
+// Load initial state from localStorage
+const persistedCart = loadCartFromStorage();
 
 const initialState = {
-  items: [],
-  total: 0,
-  itemCount: 0,
+  items: persistedCart?.items || [],
+  total: persistedCart?.total || 0,
+  itemCount: persistedCart?.itemCount || 0,
+};
+
+// Helper function to save state to localStorage
+const saveCartState = (state) => {
+  saveCartToStorage({
+    items: state.items,
+    total: state.total,
+    itemCount: state.itemCount
+  });
 };
 
 const cartSlice = createSlice({
@@ -23,10 +36,12 @@ const cartSlice = createSlice({
       }
       
       cartSlice.caseReducers.calculateTotal(state);
+      saveCartState(state);
     },
     removeFromCart: (state, action) => {
       state.items = state.items.filter(item => item.id !== action.payload);
       cartSlice.caseReducers.calculateTotal(state);
+      saveCartState(state);
     },
     updateCartQuantity: (state, action) => {
       const { carId, quantity } = action.payload;
@@ -41,11 +56,13 @@ const cartSlice = createSlice({
       }
       
       cartSlice.caseReducers.calculateTotal(state);
+      saveCartState(state);
     },
     clearCart: (state) => {
       state.items = [];
       state.total = 0;
       state.itemCount = 0;
+      saveCartState(state);
     },
     calculateTotal: (state) => {
       state.total = state.items.reduce((total, item) => total + (item.price * item.quantity), 0);
@@ -63,5 +80,6 @@ export const {
 } = cartSlice.actions;
 
 export default cartSlice.reducer;
+
 
 
